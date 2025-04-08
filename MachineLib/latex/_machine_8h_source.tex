@@ -1,0 +1,51 @@
+\hypertarget{_machine_8h_source}{}\doxysection{Machine.\+h}
+\mbox{\hyperlink{_machine_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CANADIANEXPERIENCE\_MACHINE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CANADIANEXPERIENCE\_MACHINE\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_machine_system_actual}{MachineSystemActual}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_component}{Component}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_machine}{Machine}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ wxPoint\ mPosition\ =\ wxPoint(0,\ 0);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ mTime;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_machine_system_actual}{MachineSystemActual}}*\ mMachineSystem\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ std::vector<std::shared\_ptr<Component>>\ mComponents;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_machine_a99427b767b7c15ceb33e391166cd7d68}{Machine}}();}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_machine_ad046bfebf1acc1666539ad7de155cc9e}{\string~Machine}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_machine_afaf8e9b38ffd70712c6d4eb2a2a7e1b2}{Machine}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_machine}{Machine}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_machine_adce043cf0649276b026a4baabf8a19aa}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_machine}{Machine}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ SetMachineSystem(\mbox{\hyperlink{class_machine_system_actual}{MachineSystemActual}}*\ machineSystem)\ \{mMachineSystem\ =\ machineSystem;\}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ SetPosition(wxPoint\ position)\ \{mPosition\ =\ position;\}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ Draw(std::shared\_ptr<wxGraphicsContext>\ graphics,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ SetTime(\textcolor{keywordtype}{double}\ time)\ \{mTime\ =\ time;\}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ AddComponent(std::shared\_ptr<Component>\ component);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ SetMachineNumber(\textcolor{keywordtype}{int}\ num);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CANADIANEXPERIENCE\_MACHINE\_H}}
+
+\end{DoxyCode}

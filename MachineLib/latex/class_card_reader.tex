@@ -1,0 +1,126 @@
+\hypertarget{class_card_reader}{}\doxysection{Card\+Reader Class Reference}
+\label{class_card_reader}\index{CardReader@{CardReader}}
+Inheritance diagram for Card\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_card_reader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_card_reader_a13e3954df69aeb4c4f7a1ab883938117}\label{class_card_reader_a13e3954df69aeb4c4f7a1ab883938117}} 
+{\bfseries Card\+Reader} (std\+::wstring resources\+Dir)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_card_reader_afb90d7cfcd83b6000078ba87eb70f7d4}\label{class_card_reader_afb90d7cfcd83b6000078ba87eb70f7d4}} 
+virtual {\bfseries $\sim$\+Card\+Reader} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_card_reader_a3d1327123c4df249653b05b5f1455133}\label{class_card_reader_a3d1327123c4df249653b05b5f1455133}} 
+{\bfseries Card\+Reader} (const \mbox{\hyperlink{class_card_reader}{Card\+Reader}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_card_reader_a0fcf47155248776b8c01671fa33537ab}\label{class_card_reader_a0fcf47155248776b8c01671fa33537ab}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_card_reader}{Card\+Reader}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_card_reader_a7ab0a324b9ac956607f1f804fc71a906}{Draw}} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y) override
+\item 
+void \mbox{\hyperlink{class_card_reader_a48cc72a1d5a5f9b6e14f512f29f4dbd9}{Set\+Time}} (double time) override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_air_source}{Air\+Source}} $>$ \mbox{\hyperlink{class_card_reader_ab9c04a71fb86b9c94c46ed2e73279c9e}{Get\+Source}} (int i)
+\item 
+bool \mbox{\hyperlink{class_card_reader_a40d6cb17f1c88f9684b0fc4981301e61}{Is\+Punched}} (int column, int row)
+\item 
+\mbox{\Hypertarget{class_card_reader_a19fcfcfa7f189928b08b345f188312b1}\label{class_card_reader_a19fcfcfa7f189928b08b345f188312b1}} 
+void {\bfseries Set\+Card} (std\+::wstring file\+Path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}} 
+{\bfseries Component} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_ad82d7393e339c1b19cc17a0d55b5674d}\label{class_component_ad82d7393e339c1b19cc17a0d55b5674d}} 
+virtual {\bfseries $\sim$\+Component} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aed2d7eb6cd97620b65456788dcdb4b4c}\label{class_component_aed2d7eb6cd97620b65456788dcdb4b4c}} 
+{\bfseries Component} (const \mbox{\hyperlink{class_component}{Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aaed2f9fc0c137e985998e8cea69daca5}\label{class_component_aaed2f9fc0c137e985998e8cea69daca5}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_component}{Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_a4c5574ca572f499889aa246f48e38c75}\label{class_component_a4c5574ca572f499889aa246f48e38c75}} 
+void {\bfseries Set\+Position} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_component_a529f66c934babf1bc38f74186ce24b05}\label{class_component_a529f66c934babf1bc38f74186ce24b05}} 
+virtual void {\bfseries Draw} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y)=0
+\item 
+\mbox{\Hypertarget{class_component_a26847d992febdef2321333b86ce2918b}\label{class_component_a26847d992febdef2321333b86ce2918b}} 
+virtual void {\bfseries Set\+Time} (double time)
+\item 
+\mbox{\Hypertarget{class_component_a3ab24fc52fb5b6b2242064f93327de4e}\label{class_component_a3ab24fc52fb5b6b2242064f93327de4e}} 
+void {\bfseries Set\+Machine} (\mbox{\hyperlink{class_machine}{Machine}} $\ast$machine)
+\item 
+\mbox{\Hypertarget{class_component_abc33200c21950d07881bf75944a43bc5}\label{class_component_abc33200c21950d07881bf75944a43bc5}} 
+int {\bfseries GetX} ()
+\item 
+\mbox{\Hypertarget{class_component_a4885b75a317c1d70f13cbfd2dcd3a0aa}\label{class_component_a4885b75a317c1d70f13cbfd2dcd3a0aa}} 
+int {\bfseries GetY} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_card_reader_a7ab0a324b9ac956607f1f804fc71a906}\label{class_card_reader_a7ab0a324b9ac956607f1f804fc71a906}} 
+\index{CardReader@{CardReader}!Draw@{Draw}}
+\index{Draw@{Draw}!CardReader@{CardReader}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Card\+Reader\+::\+Draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$}]{graphics,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component}{Component}}.
+
+\mbox{\Hypertarget{class_card_reader_ab9c04a71fb86b9c94c46ed2e73279c9e}\label{class_card_reader_ab9c04a71fb86b9c94c46ed2e73279c9e}} 
+\index{CardReader@{CardReader}!GetSource@{GetSource}}
+\index{GetSource@{GetSource}!CardReader@{CardReader}}
+\doxysubsubsection{\texorpdfstring{GetSource()}{GetSource()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_air_source}{Air\+Source}} $>$ Card\+Reader\+::\+Get\+Source (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get an air source. 
+\begin{DoxyParams}{Parameters}
+{\em i} & Source index 0-\/9 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to \mbox{\hyperlink{class_air_source}{Air\+Source}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_reader_a40d6cb17f1c88f9684b0fc4981301e61}\label{class_card_reader_a40d6cb17f1c88f9684b0fc4981301e61}} 
+\index{CardReader@{CardReader}!IsPunched@{IsPunched}}
+\index{IsPunched@{IsPunched}!CardReader@{CardReader}}
+\doxysubsubsection{\texorpdfstring{IsPunched()}{IsPunched()}}
+{\footnotesize\ttfamily bool Card\+Reader\+::\+Is\+Punched (\begin{DoxyParamCaption}\item[{int}]{column,  }\item[{int}]{row }\end{DoxyParamCaption})}
+
+Determine if a hole is punched in the card. 
+\begin{DoxyParams}{Parameters}
+{\em column} & Column on the card, from 0 (left of first column) to 80 (last column) \\
+\hline
+{\em row} & Row on the card, -\/2 to 9. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if hole is punched at column, row 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_card_reader_a48cc72a1d5a5f9b6e14f512f29f4dbd9}\label{class_card_reader_a48cc72a1d5a5f9b6e14f512f29f4dbd9}} 
+\index{CardReader@{CardReader}!SetTime@{SetTime}}
+\index{SetTime@{SetTime}!CardReader@{CardReader}}
+\doxysubsubsection{\texorpdfstring{SetTime()}{SetTime()}}
+{\footnotesize\ttfamily void Card\+Reader\+::\+Set\+Time (\begin{DoxyParamCaption}\item[{double}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_component}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_card_reader_8h}{Card\+Reader.\+h}}\item 
+\mbox{\hyperlink{_card_reader_8cpp}{Card\+Reader.\+cpp}}\end{DoxyCompactItemize}

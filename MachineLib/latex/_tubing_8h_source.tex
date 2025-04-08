@@ -1,0 +1,40 @@
+\hypertarget{_tubing_8h_source}{}\doxysection{Tubing.\+h}
+\mbox{\hyperlink{_tubing_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CANADIANEXPERIENCE\_TUBING\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CANADIANEXPERIENCE\_TUBING\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_sink_8h}{AirSink.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_source_8h}{AirSource.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_sink_destination_8h}{AirSinkDestination.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tubing}{Tubing}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}},\ \mbox{\hyperlink{class_air_sink_destination}{AirSinkDestination}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ mPressure\ =\ 0;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ mPressureBefore\ =\ 0;}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_air_sink}{AirSink}}\ mSink;}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_air_source}{AirSource}}\ mSource;}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_tubing_a7ddae9c62b286b28af90e817f9939e70}{Tubing}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_tubing_a10444f7cba0c098b3cd7dae31959682a}{\string~Tubing}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_tubing_a733c2ab301485dbcda1d957b96f3595e}{Tubing}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_tubing}{Tubing}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tubing_a48738cc5a0f91ad967432b1261a3086b}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_tubing}{Tubing}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ Draw(std::shared\_ptr<wxGraphicsContext>\ graphics,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ SetPressure(\textcolor{keywordtype}{double}\ pressure)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_air_sink}{AirSink}}\ *GetSink()\ \{\textcolor{keywordflow}{return}\ \&mSink;\}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_air_source}{AirSource}}\ *GetSource()\ \{\textcolor{keywordflow}{return}\ \&mSource;\}}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CANADIANEXPERIENCE\_TUBING\_H}}
+
+\end{DoxyCode}

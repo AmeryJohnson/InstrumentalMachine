@@ -1,0 +1,97 @@
+\hypertarget{class_instrument}{}\doxysection{Instrument Class Reference}
+\label{class_instrument}\index{Instrument@{Instrument}}
+Inheritance diagram for Instrument\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_instrument}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_instrument_aceb08a20d3eac883e179bf12c26ec125}\label{class_instrument_aceb08a20d3eac883e179bf12c26ec125}} 
+{\bfseries Instrument} (std\+::wstring resources\+Dir, ma\+\_\+engine $\ast$audio\+Engine, std\+::wstring audio\+File)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_instrument_a4d7d6e5a2b05597c049a9e0ca3be3d5f}{$\sim$\+Instrument}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_instrument_a05613c8fc52a74e703adefac3b4a6ccb}\label{class_instrument_a05613c8fc52a74e703adefac3b4a6ccb}} 
+{\bfseries Instrument} (const \mbox{\hyperlink{class_instrument}{Instrument}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_instrument_ad4e5e144cca47bab52a644e8503f95de}\label{class_instrument_ad4e5e144cca47bab52a644e8503f95de}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_instrument}{Instrument}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_instrument_a7c04245daa9dcc846fbe463e33773c98}\label{class_instrument_a7c04245daa9dcc846fbe463e33773c98}} 
+void {\bfseries Play\+Sound} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shape}{Shape}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shape_a44d91c7621d4d7af60fe3320a2e07279}\label{class_shape_a44d91c7621d4d7af60fe3320a2e07279}} 
+{\bfseries Shape} (const \mbox{\hyperlink{class_shape}{Shape}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shape_a8ada9e99d8b4c84eb08c1310e761fa2f}\label{class_shape_a8ada9e99d8b4c84eb08c1310e761fa2f}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_shape}{Shape}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shape_a8fa7d9ebd70471087a6c7b5b8e2c1c5b}{Draw}} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y) override
+\item 
+void \mbox{\hyperlink{class_shape_a9bf348437f7a6b81e9a908b65cf2a870}{Set\+Image}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{class_shape_a389fe83c1eb3237d8fac77216c8ea58f}{Rectangle}} (int x, int y, int wid=0, int hit=0)
+\item 
+int \mbox{\hyperlink{class_shape_a9d1182e7d151cdfe52677dadfa68e84c}{Get\+Image\+Width}} ()
+\item 
+\mbox{\Hypertarget{class_shape_a5b9f83761e35d49d984863b4fcd71518}\label{class_shape_a5b9f83761e35d49d984863b4fcd71518}} 
+void {\bfseries Set\+Color} (wx\+Colour color)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}} 
+{\bfseries Component} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_ad82d7393e339c1b19cc17a0d55b5674d}\label{class_component_ad82d7393e339c1b19cc17a0d55b5674d}} 
+virtual {\bfseries $\sim$\+Component} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aed2d7eb6cd97620b65456788dcdb4b4c}\label{class_component_aed2d7eb6cd97620b65456788dcdb4b4c}} 
+{\bfseries Component} (const \mbox{\hyperlink{class_component}{Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aaed2f9fc0c137e985998e8cea69daca5}\label{class_component_aaed2f9fc0c137e985998e8cea69daca5}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_component}{Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_a4c5574ca572f499889aa246f48e38c75}\label{class_component_a4c5574ca572f499889aa246f48e38c75}} 
+void {\bfseries Set\+Position} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_component_a529f66c934babf1bc38f74186ce24b05}\label{class_component_a529f66c934babf1bc38f74186ce24b05}} 
+virtual void {\bfseries Draw} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y)=0
+\item 
+\mbox{\Hypertarget{class_component_a26847d992febdef2321333b86ce2918b}\label{class_component_a26847d992febdef2321333b86ce2918b}} 
+virtual void {\bfseries Set\+Time} (double time)
+\item 
+\mbox{\Hypertarget{class_component_a3ab24fc52fb5b6b2242064f93327de4e}\label{class_component_a3ab24fc52fb5b6b2242064f93327de4e}} 
+void {\bfseries Set\+Machine} (\mbox{\hyperlink{class_machine}{Machine}} $\ast$machine)
+\item 
+\mbox{\Hypertarget{class_component_abc33200c21950d07881bf75944a43bc5}\label{class_component_abc33200c21950d07881bf75944a43bc5}} 
+int {\bfseries GetX} ()
+\item 
+\mbox{\Hypertarget{class_component_a4885b75a317c1d70f13cbfd2dcd3a0aa}\label{class_component_a4885b75a317c1d70f13cbfd2dcd3a0aa}} 
+int {\bfseries GetY} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_instrument_a4d7d6e5a2b05597c049a9e0ca3be3d5f}\label{class_instrument_a4d7d6e5a2b05597c049a9e0ca3be3d5f}} 
+\index{Instrument@{Instrument}!````~Instrument@{$\sim$Instrument}}
+\index{````~Instrument@{$\sim$Instrument}!Instrument@{Instrument}}
+\doxysubsubsection{\texorpdfstring{$\sim$Instrument()}{~Instrument()}}
+{\footnotesize\ttfamily Instrument\+::$\sim$\+Instrument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+Destructor 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_instrument_8h}{Instrument.\+h}}\item 
+\mbox{\hyperlink{_instrument_8cpp}{Instrument.\+cpp}}\end{DoxyCompactItemize}

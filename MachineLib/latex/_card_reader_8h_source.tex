@@ -1,0 +1,45 @@
+\hypertarget{_card_reader_8h_source}{}\doxysection{Card\+Reader.\+h}
+\mbox{\hyperlink{_card_reader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CANADIANEXPERIENCE\_CARDREADER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CANADIANEXPERIENCE\_CARDREADER\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_polygon_8h}{Polygon.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_source_8h}{AirSource.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_card_reader}{CardReader}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mBack;}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mFront;}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mCard;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ mColumn\ =\ 0;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ mBeatsPerMinute\ =\ 180;}
+\DoxyCodeLine{00021\ \ \ \ \ std::vector<std::shared\_ptr<AirSource>>\ mSources;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_card_reader}{CardReader}}(std::wstring\ resourcesDir);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_card_reader_afb90d7cfcd83b6000078ba87eb70f7d4}{\string~CardReader}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_card_reader_a3d1327123c4df249653b05b5f1455133}{CardReader}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_card_reader}{CardReader}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_card_reader_a0fcf47155248776b8c01671fa33537ab}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_card_reader}{CardReader}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ Draw(std::shared\_ptr<wxGraphicsContext>\ graphics,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ SetTime(\textcolor{keywordtype}{double}\ time)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ std::shared\_ptr<AirSource>\ \mbox{\hyperlink{class_card_reader_ab9c04a71fb86b9c94c46ed2e73279c9e}{GetSource}}(\textcolor{keywordtype}{int}\ i)\ \{\ \textcolor{keywordflow}{return}\ mSources[i];\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_card_reader_a40d6cb17f1c88f9684b0fc4981301e61}{IsPunched}}(\textcolor{keywordtype}{int}\ column,\ \textcolor{keywordtype}{int}\ row);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ SetCard(std::wstring\ filePath);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CANADIANEXPERIENCE\_CARDREADER\_H}}
+
+\end{DoxyCode}

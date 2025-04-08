@@ -1,0 +1,289 @@
+\hypertarget{classcse335_1_1_polygon}{}\doxysection{cse335\+::Polygon Class Reference}
+\label{classcse335_1_1_polygon}\index{cse335::Polygon@{cse335::Polygon}}
+
+
+{\ttfamily \#include $<$Polygon.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcse335_1_1_polygon_ac183e712f8be1e13f1c9d5b4d4512ead}{Polygon}} ()
+\item 
+virtual \mbox{\hyperlink{classcse335_1_1_polygon_ace39c67107966db12e13a183f496c3b0}{$\sim$\+Polygon}} ()
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_aa7bc17dee85458fe63d0401dc9291619}{Add\+Point}} (int x, int y)
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_a6930aeb2f05a1ef8c99a4fd4e22b4275}{Add\+Point}} (double x, double y)
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_a4380b6252c62cb463929ea1350896656}{Rectangle}} (int x, int y, int width=0, int height=0)
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_a59117a2598a36674c92dcc8e9a3631af}{Centered\+Square}} (int size=0)
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_ab153d5bbee33975ae783d4371e605c13}{Set\+Color}} (wx\+Colour color)
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_ad9a85aea0152ee6e57530ebb98bb60aa}{Set\+Image}} (std\+::wstring filename)
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_a069af375f64f323dc1a8aeecc2290ece}{Draw\+Polygon}} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y)
+\item 
+virtual void \mbox{\hyperlink{classcse335_1_1_polygon_a3c96bff8c91c20e5bb22abac9a54e70d}{Set\+Rotation}} (double rotation)
+\item 
+virtual double \mbox{\hyperlink{classcse335_1_1_polygon_acc1a041889f2bfed4a49357d9851949f}{Get\+Rotation}} () const
+\item 
+virtual void \mbox{\hyperlink{classcse335_1_1_polygon_a7c1d79cb790c547708bef72e4f067028}{Set\+Opacity}} (double opacity)
+\item 
+int \mbox{\hyperlink{classcse335_1_1_polygon_a723be44fd9baa252fec3de10bdf8b111}{Get\+Image\+Width}} ()
+\item 
+int \mbox{\hyperlink{classcse335_1_1_polygon_ade804a8bd01e28280745a7df475c04ea}{Get\+Image\+Height}} ()
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_a8116306307eb6857ec26d3ec34bdb0fa}{Bottom\+Centered\+Rectangle}} (int width=0, int height=0)
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_a0ff97be3b8bb857272a0539fe3cd20f4}{Draw\+Crosshair}} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y, int size=10, wx\+Color color= $\ast$wx\+RED)
+\item 
+void \mbox{\hyperlink{classcse335_1_1_polygon_ab6d63c9461b9c47536b7643050f84a9e}{Circle}} (double radius, int steps=Default\+Circle\+Steps)
+\item 
+double \mbox{\hyperlink{classcse335_1_1_polygon_aa727c76d4246740b607b6e2424a33056}{Average\+Luminance}} (int x, int y, int wid, int hit)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic polygon class that is used to make shapes we will use in our project. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcse335_1_1_polygon_ac183e712f8be1e13f1c9d5b4d4512ead}\label{classcse335_1_1_polygon_ac183e712f8be1e13f1c9d5b4d4512ead}} 
+\index{cse335::Polygon@{cse335::Polygon}!Polygon@{Polygon}}
+\index{Polygon@{Polygon}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{Polygon()}{Polygon()}}
+{\footnotesize\ttfamily Polygon\+::\+Polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Constructor \mbox{\Hypertarget{classcse335_1_1_polygon_ace39c67107966db12e13a183f496c3b0}\label{classcse335_1_1_polygon_ace39c67107966db12e13a183f496c3b0}} 
+\index{cse335::Polygon@{cse335::Polygon}!````~Polygon@{$\sim$Polygon}}
+\index{````~Polygon@{$\sim$Polygon}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{$\sim$Polygon()}{~Polygon()}}
+{\footnotesize\ttfamily Polygon\+::$\sim$\+Polygon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a6930aeb2f05a1ef8c99a4fd4e22b4275}\label{classcse335_1_1_polygon_a6930aeb2f05a1ef8c99a4fd4e22b4275}} 
+\index{cse335::Polygon@{cse335::Polygon}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{AddPoint()}{AddPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void cse335\+::\+Polygon\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a point to the polygon. Convenience version that accepts doubles. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X value for point in pixels \\
+\hline
+{\em y} & Y value for point in pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_aa7bc17dee85458fe63d0401dc9291619}\label{classcse335_1_1_polygon_aa7bc17dee85458fe63d0401dc9291619}} 
+\index{cse335::Polygon@{cse335::Polygon}!AddPoint@{AddPoint}}
+\index{AddPoint@{AddPoint}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{AddPoint()}{AddPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Polygon\+::\+Add\+Point (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X value for point in pixels \\
+\hline
+{\em y} & Y value for point in pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_aa727c76d4246740b607b6e2424a33056}\label{classcse335_1_1_polygon_aa727c76d4246740b607b6e2424a33056}} 
+\index{cse335::Polygon@{cse335::Polygon}!AverageLuminance@{AverageLuminance}}
+\index{AverageLuminance@{AverageLuminance}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{AverageLuminance()}{AverageLuminance()}}
+{\footnotesize\ttfamily double Polygon\+::\+Average\+Luminance (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{wid,  }\item[{int}]{hit }\end{DoxyParamCaption})}
+
+Get the average luminance of a block of pixels in any supplied image. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Top left X in pixels \\
+\hline
+{\em y} & Top left Y in pixels \\
+\hline
+{\em wid} & Width of the block to average \\
+\hline
+{\em hit} & Height of the block to average \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Luminance in the range 0-\/1, where 0 is black. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a8116306307eb6857ec26d3ec34bdb0fa}\label{classcse335_1_1_polygon_a8116306307eb6857ec26d3ec34bdb0fa}} 
+\index{cse335::Polygon@{cse335::Polygon}!BottomCenteredRectangle@{BottomCenteredRectangle}}
+\index{BottomCenteredRectangle@{BottomCenteredRectangle}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{BottomCenteredRectangle()}{BottomCenteredRectangle()}}
+{\footnotesize\ttfamily void Polygon\+::\+Bottom\+Centered\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{width = {\ttfamily 0},  }\item[{int}]{height = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Create a rectangle where 0,0 is the bottom center of the rectangle.
+
+Must set an image first if not providing a width and height.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the rectangle in pixels. If not supplied, use the image width. \\
+\hline
+{\em height} & Height of the rectangle in pixels. If not supplied, select a height such that the aspect ratio matches that of the image. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a59117a2598a36674c92dcc8e9a3631af}\label{classcse335_1_1_polygon_a59117a2598a36674c92dcc8e9a3631af}} 
+\index{cse335::Polygon@{cse335::Polygon}!CenteredSquare@{CenteredSquare}}
+\index{CenteredSquare@{CenteredSquare}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{CenteredSquare()}{CenteredSquare()}}
+{\footnotesize\ttfamily void Polygon\+::\+Centered\+Square (\begin{DoxyParamCaption}\item[{int}]{size = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Create a centered square at location 0,0 
+\begin{DoxyParams}{Parameters}
+{\em size} & Width and height of the square \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_ab6d63c9461b9c47536b7643050f84a9e}\label{classcse335_1_1_polygon_ab6d63c9461b9c47536b7643050f84a9e}} 
+\index{cse335::Polygon@{cse335::Polygon}!Circle@{Circle}}
+\index{Circle@{Circle}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{Circle()}{Circle()}}
+{\footnotesize\ttfamily void Polygon\+::\+Circle (\begin{DoxyParamCaption}\item[{double}]{radius,  }\item[{int}]{steps = {\ttfamily DefaultCircleSteps} }\end{DoxyParamCaption})}
+
+Create a circle centered on (0,0) 
+\begin{DoxyParams}{Parameters}
+{\em radius} & Circle radius \\
+\hline
+{\em steps} & Number of steps in circle (0=default) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a0ff97be3b8bb857272a0539fe3cd20f4}\label{classcse335_1_1_polygon_a0ff97be3b8bb857272a0539fe3cd20f4}} 
+\index{cse335::Polygon@{cse335::Polygon}!DrawCrosshair@{DrawCrosshair}}
+\index{DrawCrosshair@{DrawCrosshair}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{DrawCrosshair()}{DrawCrosshair()}}
+{\footnotesize\ttfamily void Polygon\+::\+Draw\+Crosshair (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$}]{graphics,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{size = {\ttfamily 10},  }\item[{wx\+Color}]{color = {\ttfamily $\ast$wxRED} }\end{DoxyParamCaption})}
+
+Convenience function to draw a crosshair. 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Graphics object to draw on \\
+\hline
+{\em x} & X location for crosshair center \\
+\hline
+{\em y} & Y location for crosshair center \\
+\hline
+{\em size} & Size (width and height) of the crosshair in pixels (optional, default= \\
+\hline
+{\em color} & Crosshair color (optional, default=red) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a069af375f64f323dc1a8aeecc2290ece}\label{classcse335_1_1_polygon_a069af375f64f323dc1a8aeecc2290ece}} 
+\index{cse335::Polygon@{cse335::Polygon}!DrawPolygon@{DrawPolygon}}
+\index{DrawPolygon@{DrawPolygon}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{DrawPolygon()}{DrawPolygon()}}
+{\footnotesize\ttfamily void Polygon\+::\+Draw\+Polygon (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$}]{graphics,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Draw the polygon 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Graphics object to draw on \\
+\hline
+{\em x} & X location to draw in pixels \\
+\hline
+{\em y} & Y location to draw in pixels \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_ade804a8bd01e28280745a7df475c04ea}\label{classcse335_1_1_polygon_ade804a8bd01e28280745a7df475c04ea}} 
+\index{cse335::Polygon@{cse335::Polygon}!GetImageHeight@{GetImageHeight}}
+\index{GetImageHeight@{GetImageHeight}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{GetImageHeight()}{GetImageHeight()}}
+{\footnotesize\ttfamily int Polygon\+::\+Get\+Image\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the height of any set image for this polygon. This may not be the height we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Height in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a723be44fd9baa252fec3de10bdf8b111}\label{classcse335_1_1_polygon_a723be44fd9baa252fec3de10bdf8b111}} 
+\index{cse335::Polygon@{cse335::Polygon}!GetImageWidth@{GetImageWidth}}
+\index{GetImageWidth@{GetImageWidth}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{GetImageWidth()}{GetImageWidth()}}
+{\footnotesize\ttfamily int Polygon\+::\+Get\+Image\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the width of any set image for this polygon. This may not be the width we actually draw, but is the size of the polygon itself. \begin{DoxyReturn}{Returns}
+Width in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcse335_1_1_polygon_acc1a041889f2bfed4a49357d9851949f}\label{classcse335_1_1_polygon_acc1a041889f2bfed4a49357d9851949f}} 
+\index{cse335::Polygon@{cse335::Polygon}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}}
+{\footnotesize\ttfamily virtual double cse335\+::\+Polygon\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the rotation of the polygon \begin{DoxyReturn}{Returns}
+rotation Rotation in turns, where 0-\/1 is one revolution. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a4380b6252c62cb463929ea1350896656}\label{classcse335_1_1_polygon_a4380b6252c62cb463929ea1350896656}} 
+\index{cse335::Polygon@{cse335::Polygon}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}}
+{\footnotesize\ttfamily void Polygon\+::\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width = {\ttfamily 0},  }\item[{int}]{height = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Create a rectangle.
+
+If the height parameter is not supplied and an image has been set, the height will be computed so as to keep the original image aspect ratio correct.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Left side X \\
+\hline
+{\em y} & Bottom left Y \\
+\hline
+{\em width} & Width of the rectangle \\
+\hline
+{\em height} & Height of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_ab153d5bbee33975ae783d4371e605c13}\label{classcse335_1_1_polygon_ab153d5bbee33975ae783d4371e605c13}} 
+\index{cse335::Polygon@{cse335::Polygon}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void Polygon\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{wx\+Colour}]{color }\end{DoxyParamCaption})}
+
+Set the color of the polygon. If we set a color, images are not used. 
+\begin{DoxyParams}{Parameters}
+{\em color} & A Gdiplus Color object. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_ad9a85aea0152ee6e57530ebb98bb60aa}\label{classcse335_1_1_polygon_ad9a85aea0152ee6e57530ebb98bb60aa}} 
+\index{cse335::Polygon@{cse335::Polygon}!SetImage@{SetImage}}
+\index{SetImage@{SetImage}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{SetImage()}{SetImage()}}
+{\footnotesize\ttfamily void Polygon\+::\+Set\+Image (\begin{DoxyParamCaption}\item[{std\+::wstring}]{filename }\end{DoxyParamCaption})}
+
+Set an image we will use as a texture for the polygon 
+\begin{DoxyParams}{Parameters}
+{\em filename} & Image filename \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a7c1d79cb790c547708bef72e4f067028}\label{classcse335_1_1_polygon_a7c1d79cb790c547708bef72e4f067028}} 
+\index{cse335::Polygon@{cse335::Polygon}!SetOpacity@{SetOpacity}}
+\index{SetOpacity@{SetOpacity}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{SetOpacity()}{SetOpacity()}}
+{\footnotesize\ttfamily void Polygon\+::\+Set\+Opacity (\begin{DoxyParamCaption}\item[{double}]{opacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set the opacity of the polygon rendering.
+
+Currently only works for images.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opacity} & Opacity from 0 to 1 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcse335_1_1_polygon_a3c96bff8c91c20e5bb22abac9a54e70d}\label{classcse335_1_1_polygon_a3c96bff8c91c20e5bb22abac9a54e70d}} 
+\index{cse335::Polygon@{cse335::Polygon}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!cse335::Polygon@{cse335::Polygon}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily virtual void cse335\+::\+Polygon\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{double}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Set the rotation of the polygon 
+\begin{DoxyParams}{Parameters}
+{\em rotation} & Rotation in turns, where 0-\/1 is one revolution. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_polygon_8h}{Polygon.\+h}}\item 
+\mbox{\hyperlink{_polygon_8cpp}{Polygon.\+cpp}}\end{DoxyCompactItemize}

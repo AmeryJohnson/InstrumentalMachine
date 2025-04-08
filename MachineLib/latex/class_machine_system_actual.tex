@@ -1,0 +1,196 @@
+\hypertarget{class_machine_system_actual}{}\doxysection{Machine\+System\+Actual Class Reference}
+\label{class_machine_system_actual}\index{MachineSystemActual@{MachineSystemActual}}
+Inheritance diagram for Machine\+System\+Actual\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_machine_system_actual}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_machine_system_actual_a94021b2348b9d6961a15342137c854cf}\label{class_machine_system_actual_a94021b2348b9d6961a15342137c854cf}} 
+{\bfseries Machine\+System\+Actual} (const std\+::wstring \&resources\+Dir, ma\+\_\+engine $\ast$audio\+Engine)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_system_actual_a2979e83ed55145e5fb5db20e40157861}\label{class_machine_system_actual_a2979e83ed55145e5fb5db20e40157861}} 
+virtual {\bfseries $\sim$\+Machine\+System\+Actual} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_system_actual_a79a0c64ad80ba609093268b0c429d233}\label{class_machine_system_actual_a79a0c64ad80ba609093268b0c429d233}} 
+{\bfseries Machine\+System\+Actual} (const \mbox{\hyperlink{class_machine_system_actual}{Machine\+System\+Actual}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_system_actual_aba6eabd47910acfb6bc7adefc0ed82d0}\label{class_machine_system_actual_aba6eabd47910acfb6bc7adefc0ed82d0}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_machine_system_actual}{Machine\+System\+Actual}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_system_actual_a439306b5adaf668f62e853f8639cf974}\label{class_machine_system_actual_a439306b5adaf668f62e853f8639cf974}} 
+void {\bfseries Set\+Machine} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_machine}{Machine}} $>$ machine)
+\item 
+void \mbox{\hyperlink{class_machine_system_actual_abdb3bb2ff1e3b7243a48475b366a07d6}{Draw\+Machine}} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics) override
+\item 
+void \mbox{\hyperlink{class_machine_system_actual_a44ccc6ed862ab3615bea46d16439977c}{Set\+Location}} (wx\+Point loc) override
+\item 
+wx\+Point \mbox{\hyperlink{class_machine_system_actual_af194771626a8c135a856f3c94c03b2f2}{Get\+Location}} () override
+\item 
+void \mbox{\hyperlink{class_machine_system_actual_aa92c9d5ca5283a4199dc9b91828f5854}{Set\+Machine\+Frame}} (int frame) override
+\item 
+void \mbox{\hyperlink{class_machine_system_actual_ab71fa48f341da7f669bb32b5d643c00f}{Set\+Frame\+Rate}} (double rate) override
+\item 
+void \mbox{\hyperlink{class_machine_system_actual_ac0e3d73736645fd1cdb9ad6982852348}{Set\+Machine\+Number}} (int machine) override
+\item 
+int \mbox{\hyperlink{class_machine_system_actual_adb52afd9b9ff1339419f74941d527e4b}{Get\+Machine\+Number}} () override
+\item 
+double \mbox{\hyperlink{class_machine_system_actual_a02c92c4dcff761234beee7287398a19d}{Get\+Machine\+Time}} () override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_machine_system}{Machine\+System}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_machine_system_a32ee9a22b33ee8820c995c4b3899d565}\label{class_machine_system_a32ee9a22b33ee8820c995c4b3899d565}} 
+{\bfseries Machine\+System} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_system_a8f375d6599a63d7543deb9350457fc33}\label{class_machine_system_a8f375d6599a63d7543deb9350457fc33}} 
+virtual {\bfseries $\sim$\+Machine\+System} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_system_a944566f543a03109436b41809d9e771e}\label{class_machine_system_a944566f543a03109436b41809d9e771e}} 
+{\bfseries Machine\+System} (const \mbox{\hyperlink{class_machine_system}{Machine\+System}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_machine_system_ab6b998215c8842dc172360eb7766d0f4}\label{class_machine_system_ab6b998215c8842dc172360eb7766d0f4}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_machine_system}{Machine\+System}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_machine_system_a036183f765a83b036c1c0eca15bad5bb}{Set\+Location}} (wx\+Point location)
+\item 
+virtual wx\+Point \mbox{\hyperlink{class_machine_system_a8c6b5218900d8a911132d66c92b5baf1}{Get\+Location}} ()
+\item 
+virtual void \mbox{\hyperlink{class_machine_system_adcb29be630c33e8814f29b51b30501e7}{Draw\+Machine}} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics)
+\item 
+virtual void \mbox{\hyperlink{class_machine_system_ac6ce50bdf87d00f229b7748749e1fb03}{Set\+Machine\+Frame}} (int frame)
+\item 
+virtual void \mbox{\hyperlink{class_machine_system_a341cf088b7e5ee0ad954fe1bb7b2d6eb}{Set\+Frame\+Rate}} (double rate)
+\item 
+virtual void \mbox{\hyperlink{class_machine_system_a93479d77ab3c5bd40a3379a05594410e}{Set\+Machine\+Number}} (int machine)
+\item 
+virtual int \mbox{\hyperlink{class_machine_system_a14be4d224f2bf975e13209c9f654b50d}{Get\+Machine\+Number}} ()
+\item 
+virtual double \mbox{\hyperlink{class_machine_system_a3d8daf207e6afd18d4aebb6cc5d1ef5f}{Get\+Machine\+Time}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_machine_system_actual_abdb3bb2ff1e3b7243a48475b366a07d6}\label{class_machine_system_actual_abdb3bb2ff1e3b7243a48475b366a07d6}} 
+\index{MachineSystemActual@{MachineSystemActual}!DrawMachine@{DrawMachine}}
+\index{DrawMachine@{DrawMachine}!MachineSystemActual@{MachineSystemActual}}
+\doxysubsubsection{\texorpdfstring{DrawMachine()}{DrawMachine()}}
+{\footnotesize\ttfamily void Machine\+System\+Actual\+::\+Draw\+Machine (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draw the machine at the currently specified location 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & Graphics object to render to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_machine_system_adcb29be630c33e8814f29b51b30501e7}{Machine\+System}}.
+
+\mbox{\Hypertarget{class_machine_system_actual_af194771626a8c135a856f3c94c03b2f2}\label{class_machine_system_actual_af194771626a8c135a856f3c94c03b2f2}} 
+\index{MachineSystemActual@{MachineSystemActual}!GetLocation@{GetLocation}}
+\index{GetLocation@{GetLocation}!MachineSystemActual@{MachineSystemActual}}
+\doxysubsubsection{\texorpdfstring{GetLocation()}{GetLocation()}}
+{\footnotesize\ttfamily wx\+Point Machine\+System\+Actual\+::\+Get\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get the location of hte machine \begin{DoxyReturn}{Returns}
+Location x,y in pixels as a point 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_machine_system_a8c6b5218900d8a911132d66c92b5baf1}{Machine\+System}}.
+
+\mbox{\Hypertarget{class_machine_system_actual_adb52afd9b9ff1339419f74941d527e4b}\label{class_machine_system_actual_adb52afd9b9ff1339419f74941d527e4b}} 
+\index{MachineSystemActual@{MachineSystemActual}!GetMachineNumber@{GetMachineNumber}}
+\index{GetMachineNumber@{GetMachineNumber}!MachineSystemActual@{MachineSystemActual}}
+\doxysubsubsection{\texorpdfstring{GetMachineNumber()}{GetMachineNumber()}}
+{\footnotesize\ttfamily int Machine\+System\+Actual\+::\+Get\+Machine\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get the current machine number \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_machine}{Machine}} number integer 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_machine_system_a14be4d224f2bf975e13209c9f654b50d}{Machine\+System}}.
+
+\mbox{\Hypertarget{class_machine_system_actual_a02c92c4dcff761234beee7287398a19d}\label{class_machine_system_actual_a02c92c4dcff761234beee7287398a19d}} 
+\index{MachineSystemActual@{MachineSystemActual}!GetMachineTime@{GetMachineTime}}
+\index{GetMachineTime@{GetMachineTime}!MachineSystemActual@{MachineSystemActual}}
+\doxysubsubsection{\texorpdfstring{GetMachineTime()}{GetMachineTime()}}
+{\footnotesize\ttfamily double Machine\+System\+Actual\+::\+Get\+Machine\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get the current machine time. \begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_machine}{Machine}} time in seconds 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_machine_system_a3d8daf207e6afd18d4aebb6cc5d1ef5f}{Machine\+System}}.
+
+\mbox{\Hypertarget{class_machine_system_actual_ab71fa48f341da7f669bb32b5d643c00f}\label{class_machine_system_actual_ab71fa48f341da7f669bb32b5d643c00f}} 
+\index{MachineSystemActual@{MachineSystemActual}!SetFrameRate@{SetFrameRate}}
+\index{SetFrameRate@{SetFrameRate}!MachineSystemActual@{MachineSystemActual}}
+\doxysubsubsection{\texorpdfstring{SetFrameRate()}{SetFrameRate()}}
+{\footnotesize\ttfamily void Machine\+System\+Actual\+::\+Set\+Frame\+Rate (\begin{DoxyParamCaption}\item[{double}]{rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the expected frame rate in frames per second 
+\begin{DoxyParams}{Parameters}
+{\em rate} & Frame rate in frames per second \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_machine_system_a341cf088b7e5ee0ad954fe1bb7b2d6eb}{Machine\+System}}.
+
+\mbox{\Hypertarget{class_machine_system_actual_a44ccc6ed862ab3615bea46d16439977c}\label{class_machine_system_actual_a44ccc6ed862ab3615bea46d16439977c}} 
+\index{MachineSystemActual@{MachineSystemActual}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!MachineSystemActual@{MachineSystemActual}}
+\doxysubsubsection{\texorpdfstring{SetLocation()}{SetLocation()}}
+{\footnotesize\ttfamily void Machine\+System\+Actual\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{wx\+Point}]{location }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the position for the root of the machine 
+\begin{DoxyParams}{Parameters}
+{\em location} & The x,y location to place the machine \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_machine_system_a036183f765a83b036c1c0eca15bad5bb}{Machine\+System}}.
+
+\mbox{\Hypertarget{class_machine_system_actual_aa92c9d5ca5283a4199dc9b91828f5854}\label{class_machine_system_actual_aa92c9d5ca5283a4199dc9b91828f5854}} 
+\index{MachineSystemActual@{MachineSystemActual}!SetMachineFrame@{SetMachineFrame}}
+\index{SetMachineFrame@{SetMachineFrame}!MachineSystemActual@{MachineSystemActual}}
+\doxysubsubsection{\texorpdfstring{SetMachineFrame()}{SetMachineFrame()}}
+{\footnotesize\ttfamily void Machine\+System\+Actual\+::\+Set\+Machine\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the current machine animation frame 
+\begin{DoxyParams}{Parameters}
+{\em frame} & Frame number \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_machine_system_ac6ce50bdf87d00f229b7748749e1fb03}{Machine\+System}}.
+
+\mbox{\Hypertarget{class_machine_system_actual_ac0e3d73736645fd1cdb9ad6982852348}\label{class_machine_system_actual_ac0e3d73736645fd1cdb9ad6982852348}} 
+\index{MachineSystemActual@{MachineSystemActual}!SetMachineNumber@{SetMachineNumber}}
+\index{SetMachineNumber@{SetMachineNumber}!MachineSystemActual@{MachineSystemActual}}
+\doxysubsubsection{\texorpdfstring{SetMachineNumber()}{SetMachineNumber()}}
+{\footnotesize\ttfamily void Machine\+System\+Actual\+::\+Set\+Machine\+Number (\begin{DoxyParamCaption}\item[{int}]{machine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Set the machine number 
+\begin{DoxyParams}{Parameters}
+{\em machine} & An integer number. Each number makes a different machine \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_machine_system_a93479d77ab3c5bd40a3379a05594410e}{Machine\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_machine_system_actual_8h}{Machine\+System\+Actual.\+h}}\item 
+\mbox{\hyperlink{_machine_system_actual_8cpp}{Machine\+System\+Actual.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{class_tubing}{}\doxysection{Tubing Class Reference}
+\label{class_tubing}\index{Tubing@{Tubing}}
+Inheritance diagram for Tubing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tubing}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tubing_a7ddae9c62b286b28af90e817f9939e70}\label{class_tubing_a7ddae9c62b286b28af90e817f9939e70}} 
+{\bfseries Tubing} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tubing_a10444f7cba0c098b3cd7dae31959682a}\label{class_tubing_a10444f7cba0c098b3cd7dae31959682a}} 
+virtual {\bfseries $\sim$\+Tubing} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tubing_a733c2ab301485dbcda1d957b96f3595e}\label{class_tubing_a733c2ab301485dbcda1d957b96f3595e}} 
+{\bfseries Tubing} (const \mbox{\hyperlink{class_tubing}{Tubing}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tubing_a48738cc5a0f91ad967432b1261a3086b}\label{class_tubing_a48738cc5a0f91ad967432b1261a3086b}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_tubing}{Tubing}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tubing_a7bbde3344073afe34d2ed06c8f287c42}{Draw}} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y) override
+\item 
+void \mbox{\hyperlink{class_tubing_aaabe81981bf4d720964128f3a672a1c1}{Set\+Pressure}} (double pressure) override
+\item 
+\mbox{\Hypertarget{class_tubing_aca58386b8d6f2873680e732617f8bc6e}\label{class_tubing_aca58386b8d6f2873680e732617f8bc6e}} 
+\mbox{\hyperlink{class_air_sink}{Air\+Sink}} $\ast$ {\bfseries Get\+Sink} ()
+\item 
+\mbox{\Hypertarget{class_tubing_a8ad0b2fbd3898623f65193aa13895abc}\label{class_tubing_a8ad0b2fbd3898623f65193aa13895abc}} 
+\mbox{\hyperlink{class_air_source}{Air\+Source}} $\ast$ {\bfseries Get\+Source} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}} 
+{\bfseries Component} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_ad82d7393e339c1b19cc17a0d55b5674d}\label{class_component_ad82d7393e339c1b19cc17a0d55b5674d}} 
+virtual {\bfseries $\sim$\+Component} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aed2d7eb6cd97620b65456788dcdb4b4c}\label{class_component_aed2d7eb6cd97620b65456788dcdb4b4c}} 
+{\bfseries Component} (const \mbox{\hyperlink{class_component}{Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aaed2f9fc0c137e985998e8cea69daca5}\label{class_component_aaed2f9fc0c137e985998e8cea69daca5}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_component}{Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_a4c5574ca572f499889aa246f48e38c75}\label{class_component_a4c5574ca572f499889aa246f48e38c75}} 
+void {\bfseries Set\+Position} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_component_a529f66c934babf1bc38f74186ce24b05}\label{class_component_a529f66c934babf1bc38f74186ce24b05}} 
+virtual void {\bfseries Draw} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y)=0
+\item 
+\mbox{\Hypertarget{class_component_a26847d992febdef2321333b86ce2918b}\label{class_component_a26847d992febdef2321333b86ce2918b}} 
+virtual void {\bfseries Set\+Time} (double time)
+\item 
+\mbox{\Hypertarget{class_component_a3ab24fc52fb5b6b2242064f93327de4e}\label{class_component_a3ab24fc52fb5b6b2242064f93327de4e}} 
+void {\bfseries Set\+Machine} (\mbox{\hyperlink{class_machine}{Machine}} $\ast$machine)
+\item 
+\mbox{\Hypertarget{class_component_abc33200c21950d07881bf75944a43bc5}\label{class_component_abc33200c21950d07881bf75944a43bc5}} 
+int {\bfseries GetX} ()
+\item 
+\mbox{\Hypertarget{class_component_a4885b75a317c1d70f13cbfd2dcd3a0aa}\label{class_component_a4885b75a317c1d70f13cbfd2dcd3a0aa}} 
+int {\bfseries GetY} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tubing_a7bbde3344073afe34d2ed06c8f287c42}\label{class_tubing_a7bbde3344073afe34d2ed06c8f287c42}} 
+\index{Tubing@{Tubing}!Draw@{Draw}}
+\index{Draw@{Draw}!Tubing@{Tubing}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Tubing\+::\+Draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$}]{graphics,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component}{Component}}.
+
+\mbox{\Hypertarget{class_tubing_aaabe81981bf4d720964128f3a672a1c1}\label{class_tubing_aaabe81981bf4d720964128f3a672a1c1}} 
+\index{Tubing@{Tubing}!SetPressure@{SetPressure}}
+\index{SetPressure@{SetPressure}!Tubing@{Tubing}}
+\doxysubsubsection{\texorpdfstring{SetPressure()}{SetPressure()}}
+{\footnotesize\ttfamily void Tubing\+::\+Set\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_air_sink_destination}{Air\+Sink\+Destination}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_tubing_8h}{Tubing.\+h}}\item 
+\mbox{\hyperlink{_tubing_8cpp}{Tubing.\+cpp}}\end{DoxyCompactItemize}

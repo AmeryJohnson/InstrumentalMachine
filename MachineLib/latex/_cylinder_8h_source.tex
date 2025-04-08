@@ -1,0 +1,51 @@
+\hypertarget{_cylinder_8h_source}{}\doxysection{Cylinder.\+h}
+\mbox{\hyperlink{_cylinder_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CANADIANEXPERIENCE\_CYLINDER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CANADIANEXPERIENCE\_CYLINDER\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_sink_destination_8h}{AirSinkDestination.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_sink_8h}{AirSink.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_polygon_8h}{Polygon.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_struck_instrument_8h}{StruckInstrument.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_cylinder}{Cylinder}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_component}{Component}},\ \mbox{\hyperlink{class_air_sink_destination}{AirSinkDestination}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ mPressure\ =\ 0;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ mPressureBefore\ =\ 0;}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{double}\ mMaxExtent\ =\ 1;}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_air_sink}{AirSink}}\ mSink;}
+\DoxyCodeLine{00021\ \ \ \ \ std::shared\_ptr<StruckInstrument>\ mInstrument;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mMount;}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mCylinder;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mRam;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_cylinder}{Cylinder}}(std::wstring\ resourcesDir);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_cylinder_a985d7ab0048aa61fc40fa919cee7ffb1}{\string~Cylinder}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_cylinder_a003fc943d3ddea65da5ae22abb087ad2}{Cylinder}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cylinder}{Cylinder}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_cylinder_a1eaf39a77f85e6514ca66b18eeff60d3}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cylinder}{Cylinder}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ Draw(std::shared\_ptr<wxGraphicsContext>\ graphics,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ SetRotation(\textcolor{keywordtype}{double}\ rotation);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ SetPressure(\textcolor{keywordtype}{double}\ pressure)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ SetMaxExtent(\textcolor{keywordtype}{double}\ extent)\ \{mMaxExtent\ =\ extent;\}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_air_sink}{AirSink}}\ *GetSink()\ \{\textcolor{keywordflow}{return}\ \&mSink;\}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ SetMotionSink(std::shared\_ptr<StruckInstrument>\ instrument);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CANADIANEXPERIENCE\_CYLINDER\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,3 @@
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate.dir
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/edit_cache.dir
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/rebuild_cache.dir

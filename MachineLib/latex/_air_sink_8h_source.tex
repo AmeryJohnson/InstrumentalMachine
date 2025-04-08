@@ -1,0 +1,30 @@
+\hypertarget{_air_sink_8h_source}{}\doxysection{Air\+Sink.\+h}
+\mbox{\hyperlink{_air_sink_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ CANADIANEXPERIENCE\_AIRSINK\_H}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ CANADIANEXPERIENCE\_AIRSINK\_H}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_component_8h}{Component.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_sink_destination_8h}{AirSinkDestination.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_air_source}{AirSource}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_air_sink}{AirSink}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{double}\ mPressure\ =\ 0;}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_air_sink_destination}{AirSinkDestination}}*\ mComponent\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00018\ \ \ \ \ std::shared\_ptr<AirSource>\ \mbox{\hyperlink{class_air_source}{AirSource}};}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_air_sink}{AirSink}}(\mbox{\hyperlink{class_air_sink_destination}{AirSinkDestination}}*\ component);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_air_sink}{\string~AirSink}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_air_sink_a71aae624cc9bcd477dc9b4c49955a38f}{AirSink}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_air_sink}{AirSink}}\ \&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ SetPressure(\textcolor{keywordtype}{double}\ pressure);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CANADIANEXPERIENCE\_AIRSINK\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,54 @@
+\hypertarget{_machine_system_actual_8h_source}{}\doxysection{Machine\+System\+Actual.\+h}
+\mbox{\hyperlink{_machine_system_actual_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ CANADIANEXPERIENCE\_MACHINESYSTEMACTUAL\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ CANADIANEXPERIENCE\_MACHINESYSTEMACTUAL\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_machine_system_8h}{MachineSystem.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_machine}{Machine}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }ma\_engine;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_machine_system_actual}{MachineSystemActual}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_machine_system}{MachineSystem}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{double}\ mFrameRate\ =\ 0;}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ mFrame\ =\ 0;}
+\DoxyCodeLine{00017\ \ \ \ \ wxPoint\ mLocation;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ mMachineNumber;}
+\DoxyCodeLine{00019\ \ \ \ \ std::shared\_ptr<Machine>\ mMachine;}
+\DoxyCodeLine{00020\ \ \ \ \ std::wstring\ mResourcesDir;}
+\DoxyCodeLine{00021\ \ \ \ \ ma\_engine*\ mAudioEngine;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_machine_system_actual}{MachineSystemActual}}(\textcolor{keyword}{const}\ std::wstring\&\ resourcesDir,\ ma\_engine*\ audioEngine);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_machine_system_actual_a2979e83ed55145e5fb5db20e40157861}{\string~MachineSystemActual}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_machine_system_actual_a79a0c64ad80ba609093268b0c429d233}{MachineSystemActual}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_machine_system_actual}{MachineSystemActual}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_machine_system_actual_aba6eabd47910acfb6bc7adefc0ed82d0}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_machine_system_actual}{MachineSystemActual}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ SetMachine(std::shared\_ptr<Machine>\ machine)\ \{mMachine\ =\ machine;\}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_machine_system_actual_abdb3bb2ff1e3b7243a48475b366a07d6}{DrawMachine}}(std::shared\_ptr<wxGraphicsContext>\ graphics)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_machine_system_actual_a44ccc6ed862ab3615bea46d16439977c}{SetLocation}}(wxPoint\ loc)\textcolor{keyword}{\ override\ }\{mLocation\ =\ loc;\}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ wxPoint\ \mbox{\hyperlink{class_machine_system_actual_af194771626a8c135a856f3c94c03b2f2}{GetLocation}}()\textcolor{keyword}{\ override\ }\{\textcolor{keywordflow}{return}\ mLocation;\}}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_machine_system_actual_aa92c9d5ca5283a4199dc9b91828f5854}{SetMachineFrame}}(\textcolor{keywordtype}{int}\ frame)\textcolor{keyword}{\ override\ }\{mFrame\ =\ frame;\}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_machine_system_actual_ab71fa48f341da7f669bb32b5d643c00f}{SetFrameRate}}(\textcolor{keywordtype}{double}\ rate)\textcolor{keyword}{\ override\ }\{mFrameRate\ =\ rate;\}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_machine_system_actual_ac0e3d73736645fd1cdb9ad6982852348}{SetMachineNumber}}(\textcolor{keywordtype}{int}\ machine)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_machine_system_actual_adb52afd9b9ff1339419f74941d527e4b}{GetMachineNumber}}()\textcolor{keyword}{\ override\ }\{\textcolor{keywordflow}{return}\ mMachineNumber;\}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_machine_system_actual_a02c92c4dcff761234beee7287398a19d}{GetMachineTime}}()\textcolor{keyword}{\ override\ }\{\textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{double}\textcolor{keyword}{>}(mFrame)\ /\ mFrameRate;\}}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CANADIANEXPERIENCE\_MACHINESYSTEMACTUAL\_H}}
+
+\end{DoxyCode}

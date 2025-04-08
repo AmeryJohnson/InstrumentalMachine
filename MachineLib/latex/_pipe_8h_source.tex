@@ -1,0 +1,39 @@
+\hypertarget{_pipe_8h_source}{}\doxysection{Pipe.\+h}
+\mbox{\hyperlink{_pipe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CANADIANEXPERIENCE\_PIPE\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CANADIANEXPERIENCE\_PIPE\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_instrument_8h}{Instrument.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shape_8h}{Shape.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_polygon_8h}{Polygon.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_sink_destination_8h}{AirSinkDestination.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_air_sink_8h}{AirSink.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_pipe}{Pipe}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_instrument}{Instrument}},\ \mbox{\hyperlink{class_air_sink_destination}{AirSinkDestination}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{double}\ mPressure\ =\ 0;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{double}\ mPressureBefore\ =\ 0;}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_air_sink}{AirSink}}\ mSink;}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mPipe;}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mPipeTop;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classcse335_1_1_polygon}{cse335::Polygon}}\ mPuff;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_pipe}{Pipe}}(std::wstring\ resourcesDir,\ ma\_engine*\ audioEngine,\ std::wstring\ sound,\ \textcolor{keywordtype}{int}\ length);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_pipe_a692d440221b15eaa564a2c9ecea88dcd}{Pipe}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pipe}{Pipe}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_pipe_ab1e4ce6381b6eb5d72f74be83329196e}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_pipe}{Pipe}}\&)\ =\ \textcolor{keyword}{delete};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ Draw(std::shared\_ptr<wxGraphicsContext>\ graphics,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ SetPressure(\textcolor{keywordtype}{double}\ pressure)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{class_air_sink}{AirSink}}\ *GetSink()\ \{\textcolor{keywordflow}{return}\ \&mSink;\}}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CANADIANEXPERIENCE\_PIPE\_H}}
+
+\end{DoxyCode}

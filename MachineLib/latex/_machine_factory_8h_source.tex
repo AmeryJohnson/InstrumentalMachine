@@ -1,0 +1,30 @@
+\hypertarget{_machine_factory_8h_source}{}\doxysection{Machine\+Factory.\+h}
+\mbox{\hyperlink{_machine_factory_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ CANADIANEXPERIENCE\_MACHINEFACTORY\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ CANADIANEXPERIENCE\_MACHINEFACTORY\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_machine}{Machine}};}
+\DoxyCodeLine{00013\ \textcolor{keyword}{struct\ }ma\_engine;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_machine_factory}{MachineFactory}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ std::wstring\ mResourcesDir;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \ \ \ \ ma\_engine*\ mAudioEngine;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_machine_factory}{MachineFactory}}(\textcolor{keyword}{const}\ std::wstring\&\ resourcesDir,\ ma\_engine*\ audioEngine);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ std::shared\_ptr<Machine>\ \mbox{\hyperlink{class_machine_factory_ac38640e251d0db4ef54cc8a86765c07b}{Create}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//CANADIANEXPERIENCE\_MACHINEFACTORY\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,14 @@
+# Target labels
+ miniaudio-populate
+# Source files and their labels
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/CMakeFiles/miniaudio-populate-complete.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-build.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-configure.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-download.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-install.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-mkdir.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-patch.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-test.rule
+/Users/ameryjohnson/Downloads/project2starter/cmake-build-debug/_deps/miniaudio-subbuild/miniaudio-populate-prefix/src/miniaudio-populate-stamp/miniaudio-populate-update.rule

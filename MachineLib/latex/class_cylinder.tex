@@ -1,0 +1,101 @@
+\hypertarget{class_cylinder}{}\doxysection{Cylinder Class Reference}
+\label{class_cylinder}\index{Cylinder@{Cylinder}}
+Inheritance diagram for Cylinder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cylinder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cylinder_ad5ede5582beedcc44b91dc157f431ab8}\label{class_cylinder_ad5ede5582beedcc44b91dc157f431ab8}} 
+{\bfseries Cylinder} (std\+::wstring resources\+Dir)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cylinder_a985d7ab0048aa61fc40fa919cee7ffb1}\label{class_cylinder_a985d7ab0048aa61fc40fa919cee7ffb1}} 
+virtual {\bfseries $\sim$\+Cylinder} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cylinder_a003fc943d3ddea65da5ae22abb087ad2}\label{class_cylinder_a003fc943d3ddea65da5ae22abb087ad2}} 
+{\bfseries Cylinder} (const \mbox{\hyperlink{class_cylinder}{Cylinder}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cylinder_a1eaf39a77f85e6514ca66b18eeff60d3}\label{class_cylinder_a1eaf39a77f85e6514ca66b18eeff60d3}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_cylinder}{Cylinder}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cylinder_a85737e45a0c0780ae8b8cd85e574e521}{Draw}} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y) override
+\item 
+\mbox{\Hypertarget{class_cylinder_a3b508d44272e47979759fdfe5326b5ff}\label{class_cylinder_a3b508d44272e47979759fdfe5326b5ff}} 
+void {\bfseries Set\+Rotation} (double rotation)
+\item 
+void \mbox{\hyperlink{class_cylinder_a069bc9c457fb8c423ada81d8cb62deae}{Set\+Pressure}} (double pressure) override
+\item 
+\mbox{\Hypertarget{class_cylinder_ad9611e4275c444be65b8f4d728495aab}\label{class_cylinder_ad9611e4275c444be65b8f4d728495aab}} 
+void {\bfseries Set\+Max\+Extent} (double extent)
+\item 
+\mbox{\Hypertarget{class_cylinder_afdd3e13ad7141d04580b64d6ef0fee32}\label{class_cylinder_afdd3e13ad7141d04580b64d6ef0fee32}} 
+\mbox{\hyperlink{class_air_sink}{Air\+Sink}} $\ast$ {\bfseries Get\+Sink} ()
+\item 
+\mbox{\Hypertarget{class_cylinder_aee25775964035f970dc32eac7a3ead24}\label{class_cylinder_aee25775964035f970dc32eac7a3ead24}} 
+void {\bfseries Set\+Motion\+Sink} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_struck_instrument}{Struck\+Instrument}} $>$ instrument)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{class_component_a8775db6d1a2c1afc2e77cd3c8f39da6f}} 
+{\bfseries Component} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_ad82d7393e339c1b19cc17a0d55b5674d}\label{class_component_ad82d7393e339c1b19cc17a0d55b5674d}} 
+virtual {\bfseries $\sim$\+Component} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aed2d7eb6cd97620b65456788dcdb4b4c}\label{class_component_aed2d7eb6cd97620b65456788dcdb4b4c}} 
+{\bfseries Component} (const \mbox{\hyperlink{class_component}{Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_aaed2f9fc0c137e985998e8cea69daca5}\label{class_component_aaed2f9fc0c137e985998e8cea69daca5}} 
+void {\bfseries operator=} (const \mbox{\hyperlink{class_component}{Component}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Assignment operator/disabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_component_a4c5574ca572f499889aa246f48e38c75}\label{class_component_a4c5574ca572f499889aa246f48e38c75}} 
+void {\bfseries Set\+Position} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_component_a529f66c934babf1bc38f74186ce24b05}\label{class_component_a529f66c934babf1bc38f74186ce24b05}} 
+virtual void {\bfseries Draw} (std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$ graphics, int x, int y)=0
+\item 
+\mbox{\Hypertarget{class_component_a26847d992febdef2321333b86ce2918b}\label{class_component_a26847d992febdef2321333b86ce2918b}} 
+virtual void {\bfseries Set\+Time} (double time)
+\item 
+\mbox{\Hypertarget{class_component_a3ab24fc52fb5b6b2242064f93327de4e}\label{class_component_a3ab24fc52fb5b6b2242064f93327de4e}} 
+void {\bfseries Set\+Machine} (\mbox{\hyperlink{class_machine}{Machine}} $\ast$machine)
+\item 
+\mbox{\Hypertarget{class_component_abc33200c21950d07881bf75944a43bc5}\label{class_component_abc33200c21950d07881bf75944a43bc5}} 
+int {\bfseries GetX} ()
+\item 
+\mbox{\Hypertarget{class_component_a4885b75a317c1d70f13cbfd2dcd3a0aa}\label{class_component_a4885b75a317c1d70f13cbfd2dcd3a0aa}} 
+int {\bfseries GetY} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cylinder_a85737e45a0c0780ae8b8cd85e574e521}\label{class_cylinder_a85737e45a0c0780ae8b8cd85e574e521}} 
+\index{Cylinder@{Cylinder}!Draw@{Draw}}
+\index{Draw@{Draw}!Cylinder@{Cylinder}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Cylinder\+::\+Draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ wx\+Graphics\+Context $>$}]{graphics,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_component}{Component}}.
+
+\mbox{\Hypertarget{class_cylinder_a069bc9c457fb8c423ada81d8cb62deae}\label{class_cylinder_a069bc9c457fb8c423ada81d8cb62deae}} 
+\index{Cylinder@{Cylinder}!SetPressure@{SetPressure}}
+\index{SetPressure@{SetPressure}!Cylinder@{Cylinder}}
+\doxysubsubsection{\texorpdfstring{SetPressure()}{SetPressure()}}
+{\footnotesize\ttfamily void Cylinder\+::\+Set\+Pressure (\begin{DoxyParamCaption}\item[{double}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_air_sink_destination}{Air\+Sink\+Destination}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cylinder_8h}{Cylinder.\+h}}\item 
+\mbox{\hyperlink{_cylinder_8cpp}{Cylinder.\+cpp}}\end{DoxyCompactItemize}
